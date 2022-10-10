@@ -6,6 +6,10 @@ import csv
 import pandas as pd
 import crontab
 
+# get the current time
+now = time.time()
+timestart = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
+print('This cronjob program started running at: ', timestart)
 
 # get current working directory
 cwd = os.getcwd()
@@ -29,3 +33,9 @@ nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 # create a new file in the current working directory
 with open(cwd + '/testFile_' + nowStr + '.txt', 'w') as f:
     f.write(str(data))
+
+
+# time end
+now = time.time()
+endTime = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
+print('This program started running at: ', endTime)
