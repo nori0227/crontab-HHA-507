@@ -4,7 +4,7 @@ import sys
 import time
 import csv
 import pandas as pd
-import crontab
+
 
 # get the current time
 now = time.time()
