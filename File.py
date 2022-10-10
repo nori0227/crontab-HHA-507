@@ -32,7 +32,7 @@ nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 
 # create a new file in the current working directory
 with open(cwd + '/testFile_' + nowStr + '.txt', 'w') as f:
-    f.write(str(data))
+    f.write(str(health_data))
 
 
 # time end
