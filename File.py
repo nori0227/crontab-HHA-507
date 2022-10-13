@@ -19,10 +19,10 @@ print(cwd)
 
 # create a new dictionary with dummy data
 health_data = pd.read_json('https://health.data.ny.gov/resource/9ma3-vsuk.json')
-healh_data
+health_data
 
 # save data to local csv file
-covid_data.to_csv('Data/health_data.csv', index = None )
+health_data.to_csv('Data/health_data.csv', index = None )
 
 # get the current time
 now = time.time()
